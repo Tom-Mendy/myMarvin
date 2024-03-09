@@ -9,9 +9,6 @@ on:
       - 'ga-ignore-*'
 
 jobs:
-  check_lambdananas:
-    runs-on: ubuntu-latest
-
   check_program_compilation:
     name: check_program_compilation
     runs-on: ubuntu-latest
