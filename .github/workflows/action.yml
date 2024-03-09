@@ -20,11 +20,11 @@ jobs:
         with:
           repository: ''
 
-      - name: Compile project
-        run: docker build . -t my_marvin
+      - name: Launch project
+        run: docker compose --build -d
 
-      - name: Check executables
-        run: docker images | grep my_marvin
+      - name: Stop project
+        run: docker compose down
 
   push_to_mirror:
     name: push_to_mirror
