@@ -1,7 +1,3 @@
----
-appearance:
-  prism:
-    theme: PRISM
 jenkins:
   agentProtocols:
     - JNLP4-connect
