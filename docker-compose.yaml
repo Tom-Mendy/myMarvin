@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  jenkins:
+    container_name: jenkins
+    build: .
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    environment:
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+      - USER_CHOCOLATEEN_PASSWORD=${USER_CHOCOLATEEN_PASSWORD:-password}
+      - USER_VAUGIE_G_PASSWORD=${USER_VAUGIE_G_PASSWORD:-password}
+      - USER_I_DONT_KNOW_PASSWORD=${USER_I_DONT_KNOW_PASSWORD:-password}
+      - USER_NASSO_PASSWORD=${USER_NASSO_PASSWORD:-password}
+      - GIT_REPOSITORY_URL=${GIT_REPOSITORY_URL:-https://github.com/Tom-Mendy/my_C_template.git}
+
+volumes:
+  jenkins_home:
