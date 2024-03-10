@@ -55,14 +55,5 @@ jenkins:
 jobs:
   - file: /var/jenkins_home/job_dsl.groovy
 security:
-  scriptApproval:
-    approvedSignatures:
-    - method java.net.URI getHost
-    - method groovy.json.JsonSlurperClassic parseText java.lang.String
-    - staticMethod groovy.json.JsonOutput prettyPrint java.lang.String
-    - method groovy.util.ConfigSlurper parse java.lang.String
-    - staticMethod java.lang.System getenv
-    - staticMethod org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval get
-    - method org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval approveSignature java.lang.String
-    - staticMethod org.jenkinsci.plugins.scriptsecurity.scripts.ScriptApproval get
-    - method java.lang.String toLowerCase
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false
