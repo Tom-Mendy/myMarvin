@@ -5,6 +5,9 @@ folder('Tools') {
 
 job('Tools/clone-repository') {
     description('Job to clone a repository')
+    parameters {
+        stringParam('GIT_REPOSITORY_URL', '', 'Git URL of the repository to clone')
+    }
     wrappers {
         preBuildCleanup { // Clean before build
             includePattern('**/target/**')
