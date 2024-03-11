@@ -15,7 +15,6 @@ services:
       - USER_VAUGIE_G_PASSWORD=${USER_VAUGIE_G_PASSWORD:-password}
       - USER_I_DONT_KNOW_PASSWORD=${USER_I_DONT_KNOW_PASSWORD:-password}
       - USER_NASSO_PASSWORD=${USER_NASSO_PASSWORD:-password}
-      - GIT_REPOSITORY_URL=${GIT_REPOSITORY_URL:-https://github.com/Tom-Mendy/my_C_template.git}
 
 volumes:
   jenkins_home:
