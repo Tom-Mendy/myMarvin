@@ -16,7 +16,7 @@ job('Tools/clone-repository') {
         }
     }
     steps {
-        shell('git clone ${GIT_REPOSITORY_URL}')
+        shell('git clone $GIT_REPOSITORY_URL')
     }
 }
 
