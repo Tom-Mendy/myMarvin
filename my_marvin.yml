@@ -38,6 +38,7 @@ jenkins:
             description: "Group Obsessively Researching Innovation Linked to Learning and Accomplishment"
             permissions:
               - "Job/Build"
+              - "Job/Create"
               - "Job/Configure"
               - "Job/Delete"
               - "Job/Move"
