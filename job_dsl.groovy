@@ -51,7 +51,7 @@ job(DISPLAY_NAME) {
         shell('make clean')
     }
     triggers {
-        scm('H/1 * * * *')
+        scm('* * * * *')
     }
 }
 '''
