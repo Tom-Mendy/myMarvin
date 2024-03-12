@@ -31,6 +31,7 @@ jenkins:
             description: "Pedagogical team member"
             permissions:
               - "Overall/Read"
+              - "Job/Read"
               - "Job/Build"
               - "Workspace/Read"
             entries:
@@ -39,6 +40,7 @@ jenkins:
             description: "Group Obsessively Researching Innovation Linked to Learning and Accomplishment"
             permissions:
               - "Overall/Read"
+              - "Job/Read"
               - "Job/Build"
               - "Job/Create"
               - "Job/Configure"
