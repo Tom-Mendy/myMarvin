@@ -33,7 +33,7 @@ jenkins:
               - "Overall/Read"
               - "Job/Read"
               - "Job/Build"
-              - "Workspace/Read"
+              - "Job/Workspace"
             entries:
               - user: "i_dont_know"
           - name: "gorilla"
@@ -47,7 +47,7 @@ jenkins:
               - "Job/Delete"
               - "Job/Move"
               - "Job/Cancel"
-              - "Workspace/Read"
+              - "Job/Workspace"
             entries:
               - user: "vaugie_g"
           - name: "assist"
@@ -55,7 +55,7 @@ jenkins:
             permissions:
               - "Overall/Read"
               - "Job/Read"
-              - "Workspace/Read"
+              - "Job/Workspace"
             entries:
               - user: "nasso"
 jobs:
